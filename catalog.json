@@ -1,0 +1,22 @@
+{
+  "plans": [
+    {
+      "name": "Starter",
+      "price": "$49/mo",
+      "features": ["5 users", "API access", "email support"],
+      "best_for": "Small teams starting with sales automation"
+    },
+    {
+      "name": "Growth",
+      "price": "$199/mo",
+      "features": ["25 users", "webhooks", "priority support"],
+      "best_for": "Growing teams needing integrations and faster support"
+    },
+    {
+      "name": "Enterprise",
+      "price": "$499/mo",
+      "features": ["unlimited users", "SSO", "audit logs", "SLA"],
+      "best_for": "Large organizations with security and compliance needs"
+    }
+  ]
+}
