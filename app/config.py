@@ -1,8 +1,10 @@
+import os
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    database_url: str = "sqlite:///./sales_agent.db"
+    # For Vercel: use /tmp for SQLite or switch to PostgreSQL
+    database_url: str = os.getenv("DATABASE_URL", "sqlite:////tmp/sales_agent.db")
     llm_api_key: str | None = None
     llm_base_url: str = "https://api.groq.com/openai/v1"
     llm_model: str = "llama-3.1-8b-instant"
